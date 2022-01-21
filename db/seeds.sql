@@ -1,10 +1,10 @@
 
 INSERT INTO department (name)
     VALUES
-        ('Sales'),
-        ('Engineering'),
-        ('Legal'),
-        ('Finance');
+        (1, 'Sales'),
+        (2, 'Engineering'),
+        (3, 'Legal'),
+        (4, 'Finance');
 
 INSERT INTO role (title, salary, department_id)
     VALUES
@@ -19,10 +19,10 @@ INSERT INTO role (title, salary, department_id)
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
     VALUES
-        ('Allan', 'Watts', 1, NULL),
-        ('Heather', 'Yates', 1, 1),
+        ('Allan', 'Watts', 1, 3),
+        ('Heather', 'Yates', 1, 3),
         ('Cliff', 'Zorn', 2, NULL),
-        ('Peter', 'Wrabbit', 2, 2),
+        ('Peter', 'Wrabbit', 5, NULL),
         ('Marco', 'Polo', 3, NULL),
-        ('Nancy', 'Spears', 4, NULL),
-        ('Aman', 'Turkish', 4, 4);
+        ('Nancy', 'Spears', 4, 5),
+        ('Aman', 'Turkish', 4, 5);
