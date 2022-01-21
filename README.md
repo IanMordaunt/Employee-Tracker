@@ -19,23 +19,27 @@
   <a name='description'></a>
   ## Description
 
-  An application to help expedite the creation process of a ReadMe file from the cammand line
+  An application to help keep track of business employees, departments, and specific roles.
+  Departments, Roles, and Employees can be added and changed if needed.
 
   ## Links
 
   GitHub Repository: https://github.com/IanMordaunt/Employee-Tracker
   
-  README-Generator Demo: https://vimeo.com/manage/videos/663207350
+  README-Generator Demo: https://vimeo.com/manage/videos/668501931
 
   <a name='installation'></a>
   ## Installation
 
-  init inquirer
+  *inquirer
+  *console.table
+  *mysql2
+
 
   <a name='usage'></a>
   ## Usage
 
-  To assist in the generation of a ReadMe file
+  To assist with business managment. Keeping track of Departments with in a business and the roles and employees within each department.
 
   <a name='contribute'></a>
   ## Contributers
@@ -50,7 +54,7 @@
   <a name='license'></a>
   ## Lincenses
  
-  No Licenses were used in the creation of this application
+  ![License: ISC 2.0](https://img.shields.io/badge/ISC-2.0-brightgreen) https://opensource.org/licenses/ISC
 
   <a name='questions'></a>
   ## Questions
