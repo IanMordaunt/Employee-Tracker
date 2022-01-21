@@ -11,15 +11,8 @@ const getEmployees = require('./lib/getEmployees');
 const addDepartment = require('./lib/addDepartment');
 const addRole = require('./lib/addRole');
 const addEmployee = require('./lib/addEmployee');
-
-
 const finalQuestion = require('./lib/finalQuestion');
 const updateEmployeeRole = require('./lib/updateEmployee');
-
-
-
-
-
 
 // Initial application prompt 
 init = () => {
@@ -50,7 +43,7 @@ init = () => {
                         .then(department => console.table(department))
                         .then(() => finalQuestion())
                         .catch((err) => console.log(err));
-                    break;
+                break;
 
                 case 'View All Roles':
                         getRole()
@@ -58,7 +51,7 @@ init = () => {
                         .then(role => console.table(role))  
                         .then(()=> finalQuestion())
                         .catch((err) => console.log(err));
-                    break;
+                break;
 
                 case 'View All Employees':
                     getEmployees()
@@ -66,7 +59,7 @@ init = () => {
                         .then(employee => console.table(employee))
                         .then(() => finalQuestion())
                         .catch((err) => console.log(err));
-                    break;
+                break;
                 
                 case 'Add a Department':
                 inquirer
@@ -80,30 +73,26 @@ init = () => {
                     .then(response => addDepartment(response.department))
                     .then(() => finalQuestion())
                     .catch((err) => console.log(err));
-                    break;
+                break;
 
-                   case 'Add a Role': 
-                        addRole(db);
-                   break;
+                case 'Add a Role': 
+                    addRole(db);
+                break;
 
-                   case 'Add an Employee':
-                       addEmployee(db);
-                   break;
+                case 'Add an Employee':
+                    addEmployee(db);
+                break;
 
-                   case 'Update Employee Role':
-                       updateEmployeeRole(db);
-                    break;
-
-                   
-
-                
+                case 'Update Employee Role':
+                    updateEmployeeRole(db);
+                break;
+               
             };
            
         });
     };
 
 
-       
         init();
 
         
