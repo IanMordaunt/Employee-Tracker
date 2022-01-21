@@ -79,16 +79,15 @@ init = () => {
                     addRole(db);
                 break;
 
-                // case 'Add an Employee':
-                //     addEmployee(db);
-                // break;
+                case 'Add an Employee':
+                    addEmployee(db);
+                break;
 
                 case 'Update Employee Role':
                     updateEmployeeRole(db);
                 break;
                
-            };
-           
+            }; 
         });
     };
 

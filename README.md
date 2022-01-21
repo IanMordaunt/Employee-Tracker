@@ -23,7 +23,7 @@
 
   ## Links
 
-  GitHub Repository: https://github.com/IanMordaunt/README-Generator
+  GitHub Repository: https://github.com/IanMordaunt/Employee-Tracker
   
   README-Generator Demo: https://vimeo.com/manage/videos/663207350
 
@@ -49,7 +49,8 @@
 
   <a name='license'></a>
   ## Lincenses
-  ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg) https://opensource.org/licenses/MPL-2.0
+ 
+  No Licenses were used in the creation of this application
 
   <a name='questions'></a>
   ## Questions
