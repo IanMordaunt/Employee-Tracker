@@ -8,11 +8,14 @@ const sequelize = require('./lib/mysql_db')
 const getDepartments = require('./lib/getDepartments');
 const getRole = require('./lib/getRole');
 const getEmployees = require('./lib/getEmployees');
+// Add functions
 const addDepartment = require('./lib/addDepartment');
 const addRole = require('./lib/addRole');
 const addEmployee = require('./lib/addEmployee');
-const finalQuestion = require('./lib/finalQuestion');
+// Update Role function
 const updateEmployeeRole = require('./lib/updateEmployee');
+// Final Prompt
+const finalQuestion = require('./lib/finalQuestion');
 
 // Initial application prompt 
 init = () => {
@@ -39,23 +42,20 @@ init = () => {
                 // Get department table
                 case 'View All Departments':
                     getDepartments()
-                    // Possible departments
                         .then(department => console.table(department))
                         .then(() => finalQuestion())
                         .catch((err) => console.log(err));
                 break;
-
+                // Get role table
                 case 'View All Roles':
                         getRole()
-                    // Possible roles
                         .then(role => console.table(role))  
                         .then(()=> finalQuestion())
                         .catch((err) => console.log(err));
                 break;
-
+                // Get employee table
                 case 'View All Employees':
                     getEmployees()
-                    // Possibly employees
                         .then(employee => console.table(employee))
                         .then(() => finalQuestion())
                         .catch((err) => console.log(err));
